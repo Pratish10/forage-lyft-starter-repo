@@ -8,9 +8,9 @@ class SpindlerBattery(Battery):
         self.last_service_date = last_service_date
 
     def battery_should_be_serviced(self):
-        two_yrs = datetime.timedelta(days=365*2)
+        three_yrs = datetime.timedelta(days=365*3)
         diff = self.current_date - self.last_service_date
-        if diff >= two_yrs:
+        if diff >= three_yrs:
             return True
         else:
             return False
