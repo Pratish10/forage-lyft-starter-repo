@@ -7,7 +7,7 @@ class NubbinBattery(Battery):
         self.current_date = current_date
         self.last_service_date = last_service_date
 
-    def engine_should_be_serviced(self):
+    def battery_should_be_serviced(self):
         four_yrs = datetime.timedelta(days=365*4)
         diff = self.current_date - self.last_service_date
         if diff >= four_yrs:
