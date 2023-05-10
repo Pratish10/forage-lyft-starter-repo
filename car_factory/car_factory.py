@@ -18,14 +18,14 @@
 # Rorschach	    Willoughby Engine	Nubbin Batte
 # Thovex	    Capulet Engine	    Nubbin Battery
 
-from car import Car
+from car_factory.car import Car
 
-from battery.battery_type.nubbin_battery import NubbinBattery
-from battery.battery_type.spindler_battery import SpindlerBattery
+from battery.nubbin_battery import NubbinBattery
+from battery.spindler_battery import SpindlerBattery
 
-from engine.engine_type.capulet_engine import CapuletEngine
-from engine.engine_type.sternman_engine import SternmanEngine
-from engine.engine_type.willoughby_engine import WilloughbyEngine
+from engine.capulet_engine import CapuletEngine
+from engine.sternman_engine import SternmanEngine
+from engine.willoughby_engine import WilloughbyEngine
 
 class Car_Factory:
     @staticmethod
